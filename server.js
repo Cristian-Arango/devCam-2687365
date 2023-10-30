@@ -5,6 +5,9 @@ const colors=require('colors')
 
 const bootcampsRoutes=require('./routes/bootcampsRoutes')
 const CousersRout=require('./routes/CoursesRoutes')
+const rsviusRoute=require('./routes/reviusRoutes')
+const userroute=require('./routes/userRoutes')
+
 
 
 
@@ -18,6 +21,8 @@ const app=express()
 
 app.use('/bootcamps',bootcampsRoutes)
 app.use('/courses',CousersRout)
+app.use('/revius',rsviusRoute)
+app.use('/users',userroute)
 
 
 
